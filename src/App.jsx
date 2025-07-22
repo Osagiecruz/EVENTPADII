@@ -7,7 +7,7 @@ import { StatusBar, Style } from '@capacitor/status-bar'
 import { SplashScreen } from '@capacitor/splash-screen'
 
 // Router
-import AppRouter from './router/index'
+import AppRouter from './Router/index'
 
 // Components
 import SplashPage from './pages/auth/SplashPage'
