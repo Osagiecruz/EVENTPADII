@@ -19,6 +19,7 @@ import VerifyEmail from './Pages/VerifyEmail';
 import Welcome from './Pages/Welcome';
 import CompleteProfile from './Pages/CompleteProfile';
 import Login from './Pages/Login';
+import AuthLayout from './AuthLayout'
 // import ProfilePhoto from './Pages/ProfilePhoto';
 // import AllSet from './Pages/AllSet';
 // Import your main dashboard component
@@ -28,6 +29,7 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/auth-layout" element={<AuthLayout />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
         <Route path="/create-password" element={<CreatePassword />} />
@@ -37,7 +39,7 @@ function App() {
         {/* <Route path="/profile-photo" element={<ProfilePhoto />} />
         <Route path="/all-set" element={<AllSet />} /> */}
         {/* <Route path="/dashboard" element={<Dashboard />} /> */}
-        <Route path="/" element={<SignUp />} /> {/* Default route */}
+        <Route path="/" element={<SignUp />} /> 
       </Routes>
     </Router>
   );
